@@ -12,28 +12,29 @@
         <!-- header-start -->
         <div class=" w-full bg-white shadow py-3 px-4 md:px-8 flex justify-between items-center z-20 fixed">
             <div>
-                <h1 class="text-3xl text-purple-500">Logo</h1>
+                <img class="h-8" src="./asset/img/logobksteam.png" alt="">
             </div>
             
-            <div class="flex border-2 rounded-full">
-                <input type="text" class="px-4 py-2 w-32 md:w-80 lg:w-96 rounded-full focus:outline-none" placeholder="Search...">
-                <button class="flex items-center justify-center px-4 border-l text-purple-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <div class="flex rounded-full bg-gray-100">
+                <input type="text" class="px-4 py-2 w-32 md:w-80 lg:w-96 rounded-full bg-gray-100 focus:outline-none" placeholder="Search...">
+                <button class="flex items-center justify-center px-4  text-purple-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
                 </button>
             </div>
              
-            <div class="flex items-center gap-4  text-purple-500 md:mr-20">
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            <div class="flex items-center gap-6  text-purple-500 ">
+                <button class="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple">
+                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
                     </svg>
+                    <!-- Notification badge -->
+                    <span aria-hidden="true" class="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full "></span>
                 </button>
-                <button id="dropdownButton" data-dropdown-toggle="dropdown" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                <button class="flex items-center gap-2" id="dropdownButton" data-dropdown-toggle="dropdown" >
+                    <img class="object-cover w-6 h-6 rounded-full" src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;s=aa3a807e1bbdfd4364d1f449eaa96d82" alt="" aria-hidden="true">
+                    <h2 class="text-gray-800 font-medium">Hi, Nam</h2>
                 </button>
                 <div id="dropdown" class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow ">
                     <div class="py-1" aria-labelledby="dropdownButton">
@@ -49,7 +50,11 @@
 
         <!-- main-start -->
         <div class="pt-8 px-4 md:px-8 pt-24">
-            <div class="flex items-center gap-4">
+            <div class="rounded-lg">
+                <img class="hidden md:block w-full h-auto rounded-lg" src="./asset/img/banner2.png" alt="">
+                <img class="md:hidden w-full h-auto rounded-lg" src="./asset/img/banner1.png" alt="">
+            </div>
+            <div class="flex items-center gap-4 mt-8">
                 <button class="flex items-center justify-between px-4 py-2 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
