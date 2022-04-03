@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-gray-50 min-h-screen">
+        <!-- header-start -->
+        <div class=" w-full bg-white shadow py-3 px-4 md:px-8 flex justify-between items-center z-20 fixed">
+          <div>
+              <h1 class="text-red-500 text-5xl">BK</h1>
+          </div>
+          
+          <div class="flex rounded-full bg-gray-100">
+              <input type="text" class="px-4 py-2 w-32 text-gray-600 md:w-80 lg:w-96 rounded-full bg-gray-100 focus:outline-none" placeholder="Tìm kiếm ...">
+              <button class="flex items-center justify-center px-4  text-orange-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+              </button>
+          </div>
+           
+          <div class="flex items-center gap-4 md:gap-6  text-orange-400 ">
+              <button class="relative align-middle rounded-md focus:outline-none ">
+                  <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+                  </svg>
+                  <!-- Notification badge -->
+                  <span aria-hidden="true" class="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full "></span>
+              </button>
+              <button class="flex items-center gap-2" id="dropdownButton" data-dropdown-toggle="dropdown" >
+                  <img class="object-cover w-6 h-6 rounded-full" src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;s=aa3a807e1bbdfd4364d1f449eaa96d82" alt="" aria-hidden="true">
+                  <h2 class="text-gray-800 font-medium hidden md:block">Hi, Nam</h2>
+              </button>
+              <div id="dropdown" class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow ">
+                  <div class="py-1" aria-labelledby="dropdownButton">
+                      <div class="py-2 mx-4 text-gray-700 border-b border-b-gray-700">Nam</div>
+                      <h2 class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Thông tin cá nhân</h2>
+                      <h2 class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Cài đặt</h2>
+                      <h2 class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Đăng xuất</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- header-end -->
+
+        <!-- main-start -->
+        <div class="flex flex-col lg:flex-row pt-18">
+          <nav>
+            <div class="bg-white lg:bg-gray-50 pb-2 fixed bottom-0 lg:relative lg:h-screen z-10 w-full lg:w-60 content-center">
+                <div class="lg:mt-16 lg:w-60 lg:fixed lg:left-0 lg:top-0 text-sm content-center lg:content-start text-left justify-between">
+                    <div class="list-reset flex justify-between flex-row lg:flex-col pt-3 lg:py-3 px-2 lg:px-2 text-center lg:text-left text-gray-600">
+                        <div class="relative lg:px-6 lg:py-3 lg:pt-6">
+                            <a class="lg:inline-flex items-center w-full font-semibold transition-colors duration-150 hover:text-gray-800" href="lichhoc.html">
+                                <div class="flex justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <span class="lg:ml-4">Lịch học</span>
+                            </a>
+                        </div>
+                        <div class="relative lg:px-6 lg:py-3">
+                          <a class="lg:inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 " href="baitap.html">
+                          <div class="flex justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                              </svg>
+                          </div>
+                          <span class="hidden lg:ml-4 lg:block">Bài tập trên lớp</span>
+                          <span class="lg:hidden lg:ml-4 lg:block">Bài tập</span>
+                          </a>
+                      </div>
+                      <div class="relative lg:px-6 lg:py-3">
+                            <a class="lg:inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 " href="xemdiem.html">
+                            <div class="flex justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                              </svg>
+                            </div>
+                            <span class="lg:ml-4">Xem điểm</span>
+                            </a>
+                        </div>
+                        <div class="relative  lg:px-6 lg:py-3">
+                            <a class="lg:inline-flex items-center w-full font-semibold transition-colors duration-150 hover:text-gray-800 " href="thongbao.html">
+                            <div class="flex justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                </svg>
+                            </div>
+                            <span class="lg:ml-4">Thông báo</span>
+                            </a>
+                        </div>
+                        <div class="relative  lg:px-6 lg:py-3">
+                            <a class="lg:inline-flex items-center w-full font-semibold transition-colors duration-150 hover:text-gray-800 " href="dangkihoc.html">
+                            <div class="flex justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                                </svg>
+                            </div>
+                            <span class="lg:ml-4">Đăng kí lớp</span>
+                            </a>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </nav>
+            <div class="w-full md:border-l">
+                <div id="main" class="main-content flex-1 py-20 md:pb-5 ">
+                    <div class="px-4 md:px-8 text-gray-700">
+                      <div class="flex gap-2 items-center pb-2 text-xl font-semibold text-gray-600 mt-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <div>Bài tập trên lớp</div>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <h2 class="pb-2">Môn học: <span>Toán cao cấp</span></h2>
+                            <h2>Bài tập mới</h2>
+                        </div>
+                        <div>
+                            <div class="mt-4">
+                                <h2>1. jshdjhaskd jkashdjkhasjkhdkjas jkahsjkdhasjkhdkjas jasdkjashjkdhjaiks uiasuidasuih</h2>
+                                <div class="mt-2">
+                                    <label class="inline-flex items-center text-gray-600 dark:text-gray-400">
+                                        <input type="radio" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" name="accountType" value="personal">
+                                        <span class="ml-2">A. Personal</span>
+                                    </label>
+                                    <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+                                        <input type="radio" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" name="accountType" value="busines">
+                                        <span class="ml-2">B. Business</span>
+                                    </label>
+                                    <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+                                        <input type="radio" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" name="accountType" value="busines">
+                                        <span class="ml-2">C. Business</span>
+                                    </label>
+                                    <label class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400">
+                                        <input type="radio" class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" name="accountType" value="busines">
+                                        <span class="ml-2">D. Business</span>
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="mt-4">
+                                <h2>2. jshdjhaskd jkashdjkhasjkhdkjas jkahsjkdhasjkhdkjas jasdkjashjkdhjaiks uiasuidasuih ......... ádasdascope</h2>
+                                <div class="mt-2">
+                                    <div class="flex items-center gap-0.5">
+                                        <div>Đáp án</div>
+                                        <div class=" ml-4">
+                                            <input class=" w-44  rounded px-3 py-1.5 border border-solid border-gray-300 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="mt-6 bg-orange-400 text-white hover:bg-orange-300 py-2 px-3 rounded-md">Nộp bài</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main-end -->
+    </div>
+
+<script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>    
+</body>
+</html>
