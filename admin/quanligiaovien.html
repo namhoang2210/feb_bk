@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-gray-50 min-h-screen">
+        <!-- header-start -->
+        <div class=" w-full bg-white shadow py-3 px-4 md:px-8 flex justify-between items-center z-20 fixed">
+          <div>
+              <h1 class="text-red-500 text-5xl">BK</h1>
+          </div>
+          
+          <div class="hidden md:block text-3xl font-bold">
+              <h1>Trang quản lí dành cho Admin</h1>
+          </div>
+           
+          <div class="flex items-center gap-4 md:gap-6  text-orange-400 ">
+              <button class="relative align-middle rounded-md focus:outline-none ">
+                  <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+                  </svg>
+                  <!-- Notification badge -->
+                  <span aria-hidden="true" class="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full "></span>
+              </button>
+              <button class="flex items-center gap-2" id="dropdownButton" data-dropdown-toggle="dropdown" >
+                  <img class="object-cover w-6 h-6 rounded-full" src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=200&amp;fit=max&amp;s=aa3a807e1bbdfd4364d1f449eaa96d82" alt="" aria-hidden="true">
+                  <h2 class="text-gray-800 font-medium hidden md:block">Hi, Nam</h2>
+              </button>
+              <div id="dropdown" class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow ">
+                  <div class="py-1" aria-labelledby="dropdownButton">
+                      <div class="py-2 mx-4 text-gray-700 border-b border-b-gray-700">Nam</div>
+                      <h2 class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Thông tin cá nhân</h2>
+                      <h2 class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Cài đặt</h2>
+                      <h2 class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Đăng xuất</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- header-end -->
+
+        <!-- main-start -->
+        <div class="flex flex-col lg:flex-row pt-18">
+            <nav>
+                <div class="bg-white lg:bg-gray-50 pb-2 fixed bottom-0 lg:relative lg:h-screen z-10 w-full lg:w-60 content-center">
+                    <div class="lg:mt-16 lg:w-60 lg:fixed lg:left-0 lg:top-0 text-sm content-center lg:content-start text-left justify-between">
+                        <div class="list-reset flex justify-between flex-row lg:flex-col pt-3 lg:py-3 px-2 lg:px-2 text-center lg:text-left text-gray-600">
+                            <div class="relative lg:px-6 lg:py-3">
+                              <a class="lg:inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 " href="quanlimonhoc.html">
+                              <div class="flex justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                              </div>
+                              <span class="hidden lg:ml-4 lg:block">Quản lí môn học</span>
+                              <span class="lg:hidden lg:ml-4 lg:block">QL.Môn học</span>
+                              </a>
+                            </div>
+    
+                            <div class="relative lg:px-6 lg:py-3">
+                                <a class="lg:inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 " href="quanligiaovien.html">
+                                <div class="flex justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>  
+                                <span class="hidden lg:ml-4 lg:block">Quản lí giáo viên</span>
+                                <span class="lg:hidden lg:ml-4 lg:block">QL.Giáo viên</span>
+                                </a>
+                            </div>
+    
+                            <div class="relative lg:px-6 lg:py-3">
+                                <a class="lg:inline-flex items-center w-full  font-semibold transition-colors duration-150 hover:text-gray-800 " href="quanlihocsinh.html">
+                                <div class="flex justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                      </svg>
+                                </div>
+                                <span class="hidden lg:ml-4 lg:block">Quản lí học viên</span>
+                                <span class="lg:hidden lg:ml-4 lg:block">QL.Học viên</span>
+                                </a>
+                            </div>
+                          
+                        </div>                
+                    </div>
+                </div>
+            </nav>
+            <div class="w-full md:border-l">
+                <div id="main" class="main-content flex-1 py-20 md:pb-5 ">
+                    <div class="px-4 md:px-8 text-gray-700">
+                      <div class="flex gap-2 items-center pb-2 text-xl font-semibold text-gray-600 mt-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <div>Quản lí giáo viên</div>
+                    </div>
+                
+                    <div class="mt-4">
+                        <div class="md:flex items-center justify-between lg:px-10">
+                            <div class="flex border-2 border-gray-200 rounded w-96">
+                                <input type="text" class="px-4 py-2 w-80 focus:outline-none" placeholder="Search...">
+                                <button class="px-4 text-white bg-orange-400 border-l border-l-orange-400 hover:bg-orange-300 ">
+                                    Search
+                                </button>
+                            </div>
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 mt-6 md:mt-0" data-modal-toggle="themgv">+ Thêm giáo viên</button>
+                            <div id="themgv" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                                <div class="relative px-4 w-full max-w-2xl h-full md:h-auto">
+                                    <!-- Modal content -->
+                                    <div class="relative bg-white rounded-lg shadow ">
+                                        <!-- Modal header -->
+                                        <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                                            <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
+                                                Thêm giáo viên
+                                            </h3>
+                                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="themgv">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                                            </button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="p-6 space-y-6">
+                                            <div class="mb-4">
+                                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                                  Tên
+                                                </label>
+                                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                                  Tên
+                                                </label>
+                                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                                  Tên
+                                                </label>
+                                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                                  Tên
+                                                </label>
+                                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600 justify-center">
+                                            <button data-modal-toggle="defaultModal" type="button" class="text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Thêm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full overflow-hidden rounded-lg shadow-xs lg:px-10 mt-4">
+                            <div class="w-full overflow-auto rounded-lg " style="max-height: 600px;">
+                              <table class="w-full whitespace-nowrap rounded-lg  border">
+                                <thead>
+                                  <tr class="text-md font-semibold text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600 rounded-t-lg ">
+                                    <th class="px-4 py-3 text-center border">STT</th>
+                                    <th class="px-4 py-3 border">Mã giáo viên</th>
+                                    <th class="px-4 py-3 border">Họ tên</th>
+                                    <th class="px-4 py-3 border">Ngày sinh</th>
+                                    <th class="px-4 py-3 border">Giới tính</th>
+                                    <th class="px-4 py-3 border text-center">Lớp học đang dạy</th>
+                                    <th class="px-4 py-3 border text-center">Tùy chọn</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="bg-white">
+                                  <tr class="text-gray-700">
+                                    <td class="px-4 py-3 border text-center">1</td>
+                                    <td class="px-4 py-3 border">B18DCCB423</td>
+                                    <td class="px-4 py-3 border">Lê Hoàng Nam</td>
+                                    <td class="px-4 py-3 text-sm border">6/4/2000</td>
+                                    <td class="px-4 py-3 text-sm border">Nam</td>
+                                    <td class="px-4 py-3 text-sm border">
+                                        <div class="flex justify-center">
+                                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 mt-6 md:mt-0"  data-modal-toggle="xem">Xem</button>
+                                        </div>
+                                        <div id="xem" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                                            <div class="relative px-4 w-full max-w-4xl h-full md:h-auto">
+                                                <!-- Modal content -->
+                                                <div class="relative bg-white rounded-lg shadow ">
+                                                    <!-- Modal header -->
+                                                    <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                                                        <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl ">
+                                                            Môn học đang dạy
+                                                        </h3>
+                                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="xem">
+                                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal body -->
+                                                    <div class="p-6 space-y-6">
+                                                        <div class="w-full overflow-hidden rounded-lg shadow-xs lg:px-10 mt-4">
+                                                            <div class="w-full overflow-auto rounded-lg " style="max-height: 600px;">
+                                                              <table class="w-full whitespace-nowrap rounded-lg  border">
+                                                                <thead>
+                                                                  <tr class="text-md font-semibold text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600 rounded-t-lg ">
+                                                                    <th class="px-4 py-3 text-center border">STT</th>
+                                                                    <th class="px-4 py-3 border">Mã môn học</th>
+                                                                    <th class="px-4 py-3 border">Tên môn học</th>
+                                                                    <th class="px-4 py-3 border">Ngày bắt đầu</th>
+                                                                    <th class="px-4 py-3 border">Ghi chú</th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody class="bg-white">
+                                                                  <tr class="text-gray-700">
+                                                                    <td class="px-4 py-3 border text-center">1</td>
+                                                                    <td class="px-4 py-3 border">B18DCCB423</td>
+                                                                    <td class="px-4 py-3 border">TOán</td>
+                                                                    <td class="px-4 py-3 text-sm border">6/4/2000</td>
+                                                                    <td class="px-4 py-3 text-sm border"></td>
+                                                                  </tr>
+                                                                 
+                                                                </tbody>  
+                                                              </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-4 py-3 text-sm border">
+                                        <div class="flex items-center justify-center  gap-4">
+                                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 mt-6 md:mt-0"  data-modal-toggle="themgv">Sửa</button>
+                                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-400 mt-6 md:mt-0">Xóa</button>
+                                        </div>
+                                    </td>
+                                  </tr>
+
+                                  
+                                 
+                                </tbody>  
+                              </table>
+                            </div>
+                  </div>
+                    </div>
+                </div>
+            </div>
+       
+        <!-- main-end -->
+    </div>
+
+<script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>    
+</body>
+</html>
